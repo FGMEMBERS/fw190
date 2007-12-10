@@ -10,6 +10,7 @@
  </offsets>
 	<model>
 		<path>Aircraft/fw190/Models/equipment.xml</path>
+		<nopreview/>
 	</model>
 
 
@@ -170,7 +171,7 @@
    <z-m>0.42</z-m>
   </offsets>
  </model>
-
+-->
 
 
 <model>
@@ -181,7 +182,7 @@
    <z-m>0.51</z-m>
   </offsets>
  </model>
-
+<!--
 <model>
   <path>Aircraft/bf109/Models/fueldump-ger.ac</path>
   <offsets>
@@ -249,6 +250,7 @@
  <animation>
   <type>rotate</type>
   <object-name>Stick</object-name>
+  <object-name>rhand</object-name>
   <property>controls/flight/elevator</property>
   <factor>-10</factor>
   <center>
@@ -266,6 +268,8 @@
  <animation>
   <type>rotate</type>
   <object-name>Stick</object-name>
+  <object-name>rhand</object-name>
+  <object-name>rarm2</object-name>
   <property>controls/flight/aileron</property>
   <factor>-10</factor>
   <center>
@@ -325,6 +329,7 @@
  </animation>
   <model>
     <name>pdisk</name>
+		<nopreview/>
     <path>Aircraft/fw190/Models/pdisk.xml</path>
     <offsets>
    <x-m>-0.1</x-m>
@@ -535,29 +540,33 @@
         <z>1</z>
       </axis>
     </animation>
+<!--Canopy-->
  <animation>
-  <type>translate</type>
-  <object-name>tailwheel</object-name>
-  <object-name>tailgear1</object-name>
-  <object-name>tailgear2</object-name>
-  <property>gear/gear[2]/position-norm</property>
+  <type>rotate</type>
+  <object-name>canopy</object-name>
+  <object-name>canopyglass</object-name>
+  <property>controls/canopy/position-norm</property>
   <interpolation>
    <entry>
-    <ind>1.0</ind>
-    <dep>0</dep>
+    <ind>0.0</ind>
+    <dep>0.0</dep>
    </entry>
    <entry>
-    <ind>0.0</ind>
-    <dep>0.3</dep>
+    <ind>1.00</ind>
+    <dep>95.0</dep>
    </entry>
   </interpolation>
+  <center>
+   <x-m>3.10</x-m>
+   <y-m>0.30</y-m>
+   <z-m>0.37</z-m>
+  </center>
   <axis>
-   <x>0.0</x>
+   <x>-1.0</x>
    <y>0.0</y>
-   <z>1.0</z>
+   <z>0.0</z>
   </axis>
  </animation>
-
 <!--Flaps-->
  <animation>
   <type>rotate</type>
@@ -676,38 +685,9 @@
    </entry>
   </interpolation>
   <center>
-   <x-m>7.792</x-m>
-   <y-m>-0.704</y-m>
-   <z-m>0.273</z-m>
-  </center>
-  <axis>
-   <x>0.000000</x>
-   <y>1.000000</y>
-   <z>0.000000</z>
-   </axis>
- </animation>
- <animation>
-  <type>rotate</type>
-  <object-name>elevator.R</object-name>
-  <property>surface-positions/elevator-pos-norm</property>
-  <interpolation>
-   <entry>
-    <ind>-1.0</ind>
-    <dep>-30.0</dep>
-   </entry>
-   <entry>
-    <ind>0.0</ind>
-    <dep>0</dep>
-   </entry>
-   <entry>
-    <ind>1.00</ind>
-    <dep>20.0</dep>
-   </entry>
-  </interpolation>
-  <center>
-   <x-m>7.792</x-m>
-   <y-m>0.704</y-m>
-   <z-m>0.273</z-m>
+   <x-m>8.25000</x-m>
+   <y-m>0.4000</y-m>
+   <z-m>0.580000</z-m>
   </center>
   <axis>
    <x>0.000000</x>
@@ -717,7 +697,19 @@
  </animation>
 
   <model> 
-   <path>Aircraft/fw190/Models/blaze-l.xml</path>
+   <path>Aircraft/bf109/Models/blackout.xml</path>
+		<nopreview/>
+   <name>Blackout</name>
+    <offsets> 
+     <x-m>3.8000</x-m>
+     <y-m>0.0000</y-m>
+     <z-m>0.606</z-m>
+    </offsets>
+  </model>
+
+  <model> 
+   <path>Aircraft/bf109/Models/blaze-l.xml</path>
+		<nopreview/>
    <name>Blaze-l</name>
     <offsets> 
      <x-m>1.8</x-m>
@@ -726,7 +718,8 @@
     </offsets>
   </model>
   <model> 
-   <path>Aircraft/fw190/Models/blaze-r.xml</path>
+   <path>Aircraft/bf109/Models/blaze-r.xml</path>
+		<nopreview/>
    <name>Blaze-l</name>
     <offsets> 
      <x-m>1.8</x-m>
@@ -736,20 +729,12 @@
   </model>
 
   <model> 
-   <path>Aircraft/fw190/Models/blaze-wr.xml</path>
+   <path>Aircraft/bf109/Models/blaze.xml</path>
    <name>Blaze-f</name>
+		<nopreview/>
     <offsets> 
      <x-m>1.8</x-m>
      <y-m>1.0</y-m>
-     <z-m>-0.3</z-m>
-    </offsets>
-  </model>
-  <model> 
-   <path>Aircraft/fw190/Models/blaze-wl.xml</path>
-   <name>Blaze-f</name>
-    <offsets> 
-     <x-m>1.8</x-m>
-     <y-m>-1.0</y-m>
      <z-m>-0.3</z-m>
     </offsets>
   </model>
@@ -757,6 +742,7 @@
     <model> 
       <path>Aircraft/fw190/Models/pilot.xml</path>
 	  <name>pilot</name>
+		<nopreview/>
       <offsets> 
         <x-m>3.8</x-m>
         <y-m>0.0</y-m>
