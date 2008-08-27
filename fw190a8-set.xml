@@ -48,31 +48,16 @@ February 2006,  Detlef Faber
 
   <model>
    <path>Aircraft/fw190/Models/FW190-A8.xml</path>
+   <livery>
+     <file type="string">desert</file>
+			<texture type="string">fw190-1.png</texture>
+  </livery>
   <crew>
       <pilot>
         <visible>1.0</visible>
       </pilot>
   </crew>
-<!--
-   <livery>
 
-     <variant type="string">Default</variant>
-     <material>
-       <fuselage>
-         <texture>bf109-1.rgb</texture>
-       </fuselage>
-       <leftwing>
-           <texture>bf109-2.rgb</texture>
-       </leftwing>
-       <rightwing>
-           <texture>bf109-3.rgb</texture>
-       </rightwing>
-       <horstab>
-           <texture>bf109-4.rgb</texture>
-         </horstab>
-     </material>
-   </livery>
--->
   </model> 
 
   <view n="0">
@@ -104,6 +89,16 @@ February 2006,  Detlef Faber
   </view>
 
   <view n="4">
+   <config>
+    <target-z-offset-m archive="y" type="double">3.349</target-z-offset-m>
+   </config>
+  </view>
+  <view n="5">
+   <config>
+    <target-z-offset-m archive="y" type="double">3.349</target-z-offset-m>
+   </config>
+  </view>
+  <view n="6">
    <config>
     <target-z-offset-m archive="y" type="double">3.349</target-z-offset-m>
    </config>
@@ -303,7 +298,7 @@ Don't forget to release Tailwheel lock (Ctrl-l) before taxiing off the Runway.</
    <engines>
       <engine n="0">
         <magnetos>0</magnetos>
-        <boost type="double">0.0</boost>
+        <boost type="double">0.5</boost>
         <prop-auto type="bool">false</prop-auto>
         <primer type="double">0.0</primer>
         <primer-pressed type="bool">0.0</primer-pressed>

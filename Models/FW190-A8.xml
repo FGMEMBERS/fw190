@@ -250,13 +250,12 @@
  <animation>
   <type>rotate</type>
   <object-name>Stick</object-name>
-  <object-name>rhand</object-name>
   <property>controls/flight/elevator</property>
   <factor>-10</factor>
   <center>
-   <x-m>3.14</x-m>
+   <x-m>3.344</x-m>
    <y-m>0.00</y-m>
-   <z-m>-0.22</z-m>
+   <z-m>-0.074</z-m>
   </center>
   <axis>
    <x>0.0</x>
@@ -268,8 +267,6 @@
  <animation>
   <type>rotate</type>
   <object-name>Stick</object-name>
-  <object-name>rhand</object-name>
-  <object-name>rarm2</object-name>
   <property>controls/flight/aileron</property>
   <factor>-10</factor>
   <center>
@@ -555,33 +552,7 @@
         <z>1</z>
       </axis>
     </animation>
-<!--Canopy-->
- <animation>
-  <type>rotate</type>
-  <object-name>canopy</object-name>
-  <object-name>canopyglass</object-name>
-  <property>controls/canopy/position-norm</property>
-  <interpolation>
-   <entry>
-    <ind>0.0</ind>
-    <dep>0.0</dep>
-   </entry>
-   <entry>
-    <ind>1.00</ind>
-    <dep>95.0</dep>
-   </entry>
-  </interpolation>
-  <center>
-   <x-m>3.10</x-m>
-   <y-m>0.30</y-m>
-   <z-m>0.37</z-m>
-  </center>
-  <axis>
-   <x>-1.0</x>
-   <y>0.0</y>
-   <z>0.0</z>
-  </axis>
- </animation>
+
 <!--Flaps-->
  <animation>
   <type>rotate</type>
@@ -700,9 +671,38 @@
    </entry>
   </interpolation>
   <center>
-   <x-m>8.25000</x-m>
-   <y-m>0.4000</y-m>
-   <z-m>0.580000</z-m>
+   <x-m>7.805</x-m>
+   <y-m>-0.704</y-m>
+   <z-m>0.276</z-m>
+  </center>
+  <axis>
+   <x>0.000000</x>
+   <y>1.000000</y>
+   <z>0.000000</z>
+   </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>elevator.R</object-name>
+  <property>surface-positions/elevator-pos-norm</property>
+  <interpolation>
+   <entry>
+    <ind>-1.0</ind>
+    <dep>-30.0</dep>
+   </entry>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.00</ind>
+    <dep>20.0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>7.805</x-m>
+   <y-m>0.704</y-m>
+   <z-m>0.276</z-m>
   </center>
   <axis>
    <x>0.000000</x>
@@ -786,48 +786,30 @@
         <pitch-deg>0</pitch-deg>
       </offsets>
     </model>
-<!--Material 
+
   <animation>
     <type>material</type>
-    <object-name>Fuselage</object-name>
-    <property-base>sim/model/livery/material/fuselage</property-base>
-    <texture-prop>texture</texture-prop>
-  </animation>
-  <animation>
-    <type>material</type>
+    <object-name>fuselage</object-name>
     <object-name>wing.L</object-name>
-    <property-base>sim/model/livery/material/leftwing</property-base>
-    <texture-prop>texture</texture-prop>
-  </animation>
-  <animation>
-    <type>material</type>
     <object-name>aileron.L</object-name>
-    <property-base>sim/model/livery/material/leftwing</property-base>
-    <texture-prop>texture</texture-prop>
-  </animation>
-  <animation>
-    <type>material</type>
     <object-name>flap.L</object-name>
-    <property-base>sim/model/livery/material/leftwing</property-base>
-    <texture-prop>texture</texture-prop>
-  </animation>
-  <animation>
-    <type>material</type>
+    <object-name>elevator.L</object-name>
+    <object-name>wheeldoor1.L</object-name>
+    <object-name>wheeldoor2.L</object-name>
+    <object-name>horstab.L</object-name>
     <object-name>wing.R</object-name>
-    <property-base>sim/model/livery/material/rightwing</property-base>
-    <texture-prop>texture</texture-prop>
-  </animation>
-  <animation>
-    <type>material</type>
     <object-name>aileron.R</object-name>
-    <property-base>sim/model/livery/material/rightwing</property-base>
-    <texture-prop>texture</texture-prop>
-  </animation>
-  <animation>
-    <type>material</type>
     <object-name>flap.R</object-name>
-    <property-base>sim/model/livery/material/rightwing</property-base>
+    <object-name>elevator.R</object-name>
+    <object-name>wheeldoor1.R</object-name>
+    <object-name>wheeldoor2.R</object-name>
+    <object-name>horstab.R</object-name>
+    <object-name>rudder</object-name>
+    <object-name>canopy</object-name>
+    <object-name>prophub</object-name>
+    <property-base>sim/model/livery/</property-base>
     <texture-prop>texture</texture-prop>
+		<texture>Liveries/fw190-1.png</texture>
   </animation>
--->
+
 </PropertyList>

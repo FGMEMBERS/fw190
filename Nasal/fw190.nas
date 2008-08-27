@@ -2,6 +2,7 @@ init = func {
 
   if (getprop("/controls/engines/engine[0]/on-startup-running") == 1) {
 		magicstart();
+	setprop ("instrumentation/altimeter/pressure-alt-ft",10);
   }  
    main_loop();
    }
@@ -40,24 +41,27 @@ init = func {
    },1);
 main_loop = func {
 
-#### automatic slats
-  airspeed = getprop("/velocities/airspeed-kt");
-    if (airspeed < 110) {
-      setprop("/controls/flight/slats", 1.0);
-      } else {
-        setprop("/controls/flight/slats", 0.0);
-     }
-#### prop-adjust  
+#### Set boost level
 
+	var alt = "instrumentation/altimeter/pressure-alt-ft";
+	var boost = "controls/engines/engine[0]/boost";
+	if (getprop(alt) > 12000) {
+		setprop (boost, 1.0);
+		}
+	if (getprop(alt) < 12000) {
+		setprop (boost, 0.5);
+		}
+	
+#### prop-adjust  
   if (getprop("/controls/engines/engine[0]/prop-auto") == 1) {  
-  revs = getprop("/engines/engine[0]/rpm");
+		var	revs = getprop("/engines/engine[0]/rpm");
     ppitch = getprop("/controls/engines/engine[0]/propeller-pitch");
     mpress = getprop("/engines/engine/mp-osi");  
     revs = getprop("/engines/engine[0]/rpm");
-      if (revs / mpress < 68.0)  {
+      if (revs / mpress < 55.0)  {
           setprop("/controls/engines/engine[0]/propeller-pitch", ppitch + 0.003);
           }
-      if (revs / mpress > 68.0)  {
+      if (revs / mpress > 55.0)  {
           setprop("/controls/engines/engine[0]/propeller-pitch", ppitch - 0.003);
           }
     
@@ -72,8 +76,8 @@ main_loop = func {
     setprop("/consumables/fuel/tank[0]/selected",0);
     interpolate ("/engines/engine[0]/fuel-press", 0, 1);
     }
-  if (rev2 > 2600) {
-    strain = rev2 - 2600;
+  if (rev2 > 2800) {
+    strain = rev2 - 2800;
     setprop("/engines/engine[0]/rev-strain", rstrain + strain);
   }
   
@@ -276,4 +280,4 @@ var flash1_trigger = props.globals.getNode("controls/armament/trigger1", 0);
 aircraft.light.new("sim/model/fw190/lighting/flash-wr", [0.05, 0.052], flash1_trigger);
 aircraft.light.new("sim/model/fw190/lighting/flash-wl", [0.052, 0.05], flash1_trigger);
 
-# aircraft.livery.init("Aircraft/bf109/Models/Liveries", "sim/model/livery/variant");
+aircraft.livery.init("Aircraft/fw190/Models/Liveries");
