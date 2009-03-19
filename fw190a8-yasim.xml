@@ -63,8 +63,8 @@ YASim aerodynamic model for a Focke Wulf FW-190 A8
 <hstab x="-7.823" y="0.1" z="0.274" taper="0.98" incidence="2.0"
        length="1.665" chord="0.859" sweep="1" >
   <stall aoa="16" width="21" peak="1.5"/>
-  <flap0 start="0.0" end="1.0" lift="3.3" drag="3.9"/>
-  <flap1 start="0.5" end="1.0" lift="4" drag="11.1"/>
+  <flap0 start="0.0" end="1.0" lift="3.3" drag="4.9"/>
+  <flap1 start="0.5" end="1.0" lift="0" drag="11.1"/>
   <control-input axis="/controls/flight/elevator" control="FLAP0"/>
   <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
   <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
@@ -86,8 +86,8 @@ YASim aerodynamic model for a Focke Wulf FW-190 A8
 <propeller   x="-1.2" y="0" z="-0.2"
            radius="1.75" 
            mass="2660" moment="84.5"
-           cruise-alt="5000" cruise-power="1450"
-           cruise-speed="280" cruise-rpm="1357"
+           cruise-alt="5000" cruise-power="950"
+           cruise-speed="240" cruise-rpm="1157"
            gear-ratio="0.542"
            min-rpm="300" max-rpm="1537" >
   <actionpt x="-0.4" y="0" z="0"/>
@@ -132,7 +132,7 @@ YASim aerodynamic model for a Focke Wulf FW-190 A8
 </gear>
 
 <!-- Tail wheel -->
-<gear x="-8.095" y="0" z="-0.609" compression="0.2" sfric="0.5" castering="1">
+<gear x="-8.095" y="0" z="-0.609" compression="0.2" sfric="0.5" dfric="0.3" castering="1">
   <control-input axis="/controls/gear/tailwheel-lock" control="CASTERING" 
                  src0="0" src1="1"
                  dst0="1" dst1="0"/>
