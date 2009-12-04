@@ -21,8 +21,36 @@ February 2006,  Detlef Faber
 -->  
   <flight-model>yasim</flight-model>
   <aero>fw190a8-yasim</aero>
-  <fuel-fraction>0.75</fuel-fraction>
-
+	
+	<failure>
+		<emptyweight type ="float">7380</emptyweight>
+		<max-permiss-rpm type="float">2800</max-permiss-rpm>
+		<max-permiss-boost type="float">55</max-permiss-boost>
+		<bendload type="float">8</bendload>
+		<breakload type="float">9</breakload>
+		<breakspeed type="float">465</breakspeed>
+		<controls>
+				<left-wing-failure type ="float">0</left-wing-failure>
+				<right-wing-failure type ="float">0</right-wing-failure>
+		</controls>
+		<engines>
+				<engine n="0">
+						<boost-strain type="float">0</boost-strain>
+						<rev-strain type="float">0</rev-strain>
+						<overboost type="bool">false</overboost>
+						<overrev type="bool">false</overrev>
+				</engine>
+		</engines>
+		<gear>
+				<gear n="0">
+				
+				</gear>
+		</gear>
+		<structural>
+				<left-wing-torn type="bool">false</left-wing-torn>
+				<right-wing-torn type="bool">false</right-wing-torn>
+		</structural>
+	</failure>
   <systems>
    <electrical>
     <path>Aircraft/Generic/generic-electrical.xml</path>
@@ -484,11 +512,9 @@ Don't forget to release Tailwheel lock (Ctrl-l) before taxiing off the Runway.</
       <file>Aircraft/fw190/Nasal/fw190.nas</file>
       <script>init();</script>
     </fw190>
-
-    <pilot-g>
-     <file>Aircraft/fw190/pilot-g.nas</file>
-    </pilot-g>
-
+		<failure>
+			<file>Aircraft/fw190/Nasal/failure.nas</file>
+		</failure>
   </nasal>
 
 
