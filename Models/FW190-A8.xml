@@ -8,18 +8,18 @@
  <offsets>
    <z-m>0.0</z-m>
  </offsets>
+<!--
+    <effect>
+  <inherits-from>Aircraft/fw190/Models/Effects/fw190_bumpspec</inherits-from>
+  <object-name>fuselage</object-name>
+    </effect>
+-->
 	<model>
 		<path>Aircraft/fw190/Models/equipment.xml</path>
 		<nopreview/>
 	</model>
 
-	<animation>
-		<type>shader</type>
-		<shader>chrome</shader>
-		<texture>Aircraft/fw190/Models/glass_shader.png</texture>
-		<object-name>canopyglass</object-name>
-		<object-name>frontglass</object-name>
-	</animation>
+
 
 	<model>
 		<name>cockpit</name>
@@ -32,7 +32,13 @@
 		<max-m>10</max-m>
 	</animation>
 
-
+	<animation>
+		<type>shader</type>
+		<shader>chrome</shader>
+		<texture>Aircraft/fw190/Models/glass_shader.png</texture>
+		<object-name>canopyglass</object-name>
+		<object-name>frontglass</object-name>
+	</animation>
 <!--Propeller -->
  <animation>
   <type>select</type>
@@ -289,13 +295,36 @@
   </axis>
  </animation>
 <!--Tailwheel-->
+ <animation>
+  <type>translate</type>
+  <object-name>tailwheel</object-name>
+  <object-name>tailgear1</object-name>
+  <object-name>tailgear2</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0.35</dep>
+   </entry>
+   <entry>
+    <ind>1.00</ind>
+    <dep>0.0</dep>
+   </entry>
+  </interpolation>
+  <axis>
+   <x>-0.2</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+ </animation>
 <animation> 
       <type>rotate</type>
       <object-name>tailwheel</object-name>
+  		<object-name>tailgear2</object-name>
       <property>gear/gear[2]/caster-angle-deg</property>
       <factor>1</factor>
       <center> 
-        <x-m>7.62</x-m>
+        <x-m>7.96</x-m>
         <y-m>0</y-m>
         <z-m>-0.502272</z-m>
       </center>

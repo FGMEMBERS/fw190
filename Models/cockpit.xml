@@ -1,6 +1,7 @@
 <PropertyList>
+<!--
  <path>cockpit.ac</path>
-
+-->
  <animation>
   <type>material</type>
   <object-name>mainpanel</object-name>
