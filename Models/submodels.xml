@@ -25,7 +25,7 @@
 		<collision-report>sim/ai/aircraft/collision/gun</collision-report>
 		<impact>true</impact>
 		<impact-report>sim/ai/aircraft/impact/gun</impact-report>
-		<submodel-path>Aircraft/bf109/Models/subsubmodels.xml</submodel-path>
+		<submodel-path>Aircraft/fw190/Models/subsubmodels.xml</submodel-path>
   </submodel>
 
 <!-- termporarly disabled
@@ -71,7 +71,7 @@
 		<collision-report>sim/ai/aircraft/collision/gun</collision-report>
 		<impact>true</impact>
 		<impact-report>sim/ai/aircraft/impact/gun</impact-report>
-		<submodel-path>Aircraft/bf109/Models/subsubmodels.xml</submodel-path>
+		<submodel-path>Aircraft/fw190/Models/subsubmodels.xml</submodel-path>
   </submodel>
 <!--
 	<submodel> 
@@ -116,7 +116,7 @@
 		<collision-report>sim/ai/aircraft/collision/cannon</collision-report>
 		<impact>true</impact>
 		<impact-report>sim/ai/aircraft/impact/cannon</impact-report>
-		<submodel-path>Aircraft/bf109/Models/subsubmodels.xml</submodel-path>
+		<submodel-path>Aircraft/fw190/Models/subsubmodels.xml</submodel-path>
   </submodel>
 
 
@@ -271,7 +271,7 @@
 		<collision-report>sim/ai/aircraft/collision/cannon</collision-report>
 		<impact>true</impact>
 		<impact-report>sim/ai/aircraft/impact/cannon</impact-report>
-		<submodel-path>Aircraft/bf109/Models/subsubmodels.xml</submodel-path>
+		<submodel-path>Aircraft/fw190/Models/subsubmodels.xml</submodel-path>
   </submodel>
 <!--
 	<submodel> 
@@ -316,7 +316,7 @@
 		<collision-report>sim/ai/aircraft/collision/cannon</collision-report>
 		<impact>true</impact>
 		<impact-report>sim/ai/aircraft/impact/cannon</impact-report>
-		<submodel-path>Aircraft/bf109/Models/subsubmodels.xml</submodel-path>
+		<submodel-path>Aircraft/fw190/Models/subsubmodels.xml</submodel-path>
   </submodel>
 <!--
 	<submodel> 

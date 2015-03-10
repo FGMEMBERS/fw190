@@ -13,12 +13,21 @@ February 2006,  Detlef Faber
 
   <description>Focke-Wulf FW-190 A8</description>
   <author>Detlef Faber</author>
-  <status>beta</status>
+  <status>Voodoo 1.1</status>
 <!--
   <startup>
     <splash-texture>Aircraft/bf109/bf109-splash.rgb</splash-texture>
   </startup>
 -->  
+   <sound>
+   <audible>true</audible>
+   <path>Aircraft/FW190/Sounds/fw190-sound.xml</path>
+   <volume type="double">0.26</volume>
+   <flap-volume>0.2</flap-volume>
+   <gear-volume>0.9</gear-volume>
+   <canopy-volume>1.0</canopy-volume>
+  </sound>
+   
   <flight-model>yasim</flight-model>
   <aero>fw190a8-yasim</aero>
 	
@@ -55,13 +64,16 @@ February 2006,  Detlef Faber
    <electrical>
     <path>Aircraft/Generic/generic-electrical.xml</path>
    </electrical>
+  <autopilot>
+        <path>Aircraft/fw190/autopilot.xml</path>
+  </autopilot>
   </systems> 
  
   <virtual-cockpit archive="y">true</virtual-cockpit>
   <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
 
   <sound>
-   <path>Aircraft/p51d/p51d-sound.xml</path>
+   <path>Aircraft/fw190/p51d-sound.xml</path>
   </sound>
 
   <submodels> 
@@ -77,8 +89,8 @@ February 2006,  Detlef Faber
   <model>
    <path>Aircraft/fw190/Models/FW190-A8.xml</path>
    <livery>
-     <file type="string">desert</file>
-			<texture type="string">fw190-1.png</texture>
+     <name type="string">Red 5</name>
+	 <texture type="string">fw190-1E.png</texture>
   </livery>
   <crew>
       <pilot>
@@ -131,20 +143,7 @@ February 2006,  Detlef Faber
     <target-z-offset-m archive="y" type="double">3.349</target-z-offset-m>
    </config>
   </view>
-
- <autopilot>
-   <config>
-     <min-climb-speed-kt type="float">70.0</min-climb-speed-kt>
-     <best-climb-speed-kt type="float">75.0</best-climb-speed-kt>
-     <target-climb-rate-fpm type="float">500.0</target-climb-rate-fpm>
-     <target-descent-rate-fpm type="float">1000.0</target-descent-rate-fpm>
-     <elevator-adj-factor type="float">4000.0</elevator-adj-factor>
-     <integral-contribution type="float">0.01</integral-contribution>
-     <zero-pitch-throttle type="float">0.45</zero-pitch-throttle>
-     <zero-pitch-trim-full-throttle type="float">0.14</zero-pitch-trim-full-throttle>
-   </config>
- </autopilot>
-
+ 
   <hud>
    <enable3d>false</enable3d>
   </hud>  
@@ -313,6 +312,9 @@ lower Flaps and Gear under 300 km/h. Approach Speed is 210 km/h. Speed at Tresho
 
  <!-- set up control properties for YASim -->
  <controls>
+  <gear>
+      <brake-parking type="double">1.0</brake-parking>
+    </gear>
    <armament>
      <trigger type="bool">false</trigger>
      <trigger1 type="bool">false</trigger1>
@@ -503,6 +505,7 @@ lower Flaps and Gear under 300 km/h. Approach Speed is 210 km/h. Speed at Tresho
     <fw190>
       <file>Aircraft/fw190/Nasal/fw190.nas</file>
       <script>init();</script>
+      <file>Aircraft/fw190/Nasal/liveries.nas</file>
     </fw190>
 		<failure>
 			<file>Aircraft/fw190/Nasal/failure.nas</file>

@@ -1,18 +1,18 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "cushion" rgb 0.599641 0.374237 0.123789 amb 1 1 1 emis 0 0 0 spec 0.348834 0.248654 0.12343 shi 32 trans 0
-MATERIAL "interiour" rgb 0.574596 0.574596 0.74991 amb 1 1 1 emis 0 0 0 spec 1 1 0.629672 shi 12 trans 0
-MATERIAL "case.002" rgb 0.099821 0.124865 0.124865 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "interiour.002" rgb 0.574596 0.574596 0.74991 amb 0.846154 0.846154 0.846154 emis 0 0 0 spec 1 1 0.629672 shi 12 trans 0
-MATERIAL "Material" rgb 0.8 0.8 0.8 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 24 trans 0
-MATERIAL "Material.003" rgb 0.2 0.2 0.2 amb 1 1 1 emis 0 0 0 spec 0.098385 0.07334 0.135952 shi 32 trans 0
-MATERIAL "interiour.001" rgb 0.536774 0.535423 0.535423 amb 1 1 1 emis 0 0 0 spec 0.398923 0.361356 0.350628 shi 32 trans 0
-MATERIAL "glass" rgb 0.1 0.1 0.1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0.763868
-MATERIAL "engine" rgb 0.161356 0.173878 0.136311 amb 0.468158 0.468158 0.468158 emis 0 0 0 spec 1 1 1 shi 20 trans 0
-MATERIAL "exhaust" rgb 0.236491 0.249013 0.249013 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "gear" rgb 0.436849 0.424327 0.426849 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "seat" rgb 0.324148 0.349192 0.299103 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.386401 0.373878 0.348834 shi 32 trans 0
-MATERIAL "black" rgb 0.161356 0.173878 0.136311 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 20 trans 0
+MATERIAL "cushion" rgb 0.599641 0.374237 0.123789 amb 0.599641 0.374237 0.123789 emis 0 0 0 spec 0.348834 0.248654 0.12343 shi 32 trans 0
+MATERIAL "interiour" rgb 0.574596 0.574596 0.74991 amb 0.574596 0.574596 0.74991 emis 0 0 0 spec 1 1 0.629672 shi 12 trans 0
+MATERIAL "case.002" rgb 0.099821 0.124865 0.124865 amb 0.099821 0.124865 0.124865 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "interiour.002" rgb 0.574596 0.574596 0.74991 amb 0.574596 0.574596 0.74991 emis 0 0 0 spec 1 1 0.629672 shi 12 trans 0
+MATERIAL "Material" rgb 0.8 0.8 0.8 amb 0.8 0.8 0.8 emis 0 0 0 spec 1 1 1 shi 24 trans 0
+MATERIAL "Material.003" rgb 0.2 0.2 0.2 amb 0.2 0.2 0.2 emis 0 0 0 spec 0.098385 0.07334 0.135952 shi 32 trans 0
+MATERIAL "interiour.001" rgb 0.536774 0.535423 0.535423 amb 0.536774 0.535423 0.535423 emis 0 0 0 spec 0.398923 0.361356 0.350628 shi 32 trans 0
+MATERIAL "glass" rgb 0.1 0.1 0.1 amb 0.1 0.1 0.1 emis 0 0 0 spec 1 1 1 shi 32 trans 0.763868
+MATERIAL "engine" rgb 0.161356 0.173878 0.136311 amb 0.161356 0.173878 0.136311 emis 0 0 0 spec 1 1 1 shi 20 trans 0
+MATERIAL "exhaust" rgb 0.236491 0.249013 0.249013 amb 0.236491 0.249013 0.249013 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "gear" rgb 0.436849 0.424327 0.426849 amb 0.436849 0.424327 0.426849 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "seat" rgb 0.324148 0.349192 0.299103 amb 0.324148 0.349192 0.299103 emis 0 0 0 spec 0.386401 0.373878 0.348834 shi 32 trans 0
+MATERIAL "black" rgb 0.161356 0.173878 0.136311 amb 0.161356 0.173878 0.136311 emis 0 0 0 spec 1 1 1 shi 20 trans 0
 OBJECT world
 kids 41
 OBJECT poly
@@ -4813,7 +4813,7 @@ OBJECT poly
 name "aileron.L"
 data 10
 Circle.002
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 31
@@ -5081,7 +5081,7 @@ OBJECT poly
 name "aileron.R"
 data 10
 Circle.006
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 31
@@ -5349,7 +5349,7 @@ OBJECT poly
 name "canopy"
 data 10
 Circle.010
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 76
@@ -6228,7 +6228,7 @@ OBJECT poly
 name "elevator.L"
 data 10
 Circle.014
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -6549,7 +6549,7 @@ OBJECT poly
 name "elevator.R"
 data 10
 Circle.028
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -7267,7 +7267,7 @@ OBJECT poly
 name "flap.L"
 data 10
 Circle.004
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -7350,7 +7350,7 @@ OBJECT poly
 name "flap.R"
 data 10
 Circle.008
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -7470,7 +7470,7 @@ OBJECT poly
 name "fuselage"
 data 10
 Circle.001
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 554
@@ -14625,7 +14625,7 @@ OBJECT poly
 name "horstab.L"
 data 10
 Circle.012
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 63
@@ -15157,7 +15157,7 @@ OBJECT poly
 name "horstab.R"
 data 10
 Circle.027
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 63
@@ -17100,7 +17100,7 @@ OBJECT poly
 name "prophub"
 data 10
 Circle.005
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 127
@@ -18101,7 +18101,7 @@ OBJECT poly
 name "radiator"
 data 10
 Circle.020
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 151
@@ -18790,7 +18790,7 @@ OBJECT poly
 name "rudder"
 data 10
 Circle.017
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 45
@@ -19589,7 +19589,7 @@ OBJECT poly
 name "stopwheel.L"
 data 13
 wheelstop.002
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 146
@@ -20843,7 +20843,7 @@ OBJECT poly
 name "stopwheel.R"
 data 13
 wheelstop.003
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 146
@@ -23825,7 +23825,7 @@ OBJECT poly
 name "tailwheel"
 data 10
 Circle.003
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 146
@@ -25079,7 +25079,7 @@ OBJECT poly
 name "wheel.L"
 data 13
 wheelstop.001
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 146
@@ -26333,7 +26333,7 @@ OBJECT poly
 name "wheel.R"
 data 9
 wheelstop
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 146
@@ -27821,7 +27821,7 @@ OBJECT poly
 name "wheeldoor1.L_1"
 data 10
 Circle.016
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -28152,7 +28152,7 @@ OBJECT poly
 name "wheeldoor1.R_1"
 data 10
 Circle.019
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -28249,7 +28249,7 @@ OBJECT poly
 name "wheeldoor2.L"
 data 10
 Circle.018
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 7
@@ -28296,7 +28296,7 @@ OBJECT poly
 name "wheeldoor2.R"
 data 10
 Circle.011
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 7
@@ -28343,7 +28343,7 @@ OBJECT poly
 name "wing.L"
 data 6
 Circle
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 134
@@ -29670,7 +29670,7 @@ OBJECT poly
 name "wing.R"
 data 10
 Circle.026
-texture "fw190-1.png"
+texture "fw190-1E.png"
 texrep 1 1
 crease 30.000000
 numvert 134

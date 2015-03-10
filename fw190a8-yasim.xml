@@ -46,7 +46,7 @@ YASim aerodynamic model for a Focke Wulf FW-190 A8
 <wing x="-2.8" y="0.498" z="-0.362" taper="0.53" incidence="1.7" twist="-0.6"
       length="4.31" chord="2.373" sweep="0.9" dihedral="5" camber="0.35">
   <stall aoa="12" width="22" peak="1.5"/>
-  <flap0 start="0.0" end="0.54" lift="1.8" drag="2.5"/>
+  <flap0 start="0.0" end="0.54" lift="1.8" drag="2.8"/>
   <flap1 start="0.54" end="1.0" lift="1.85" drag="1.5"/>
   <control-input axis="/controls/flight/flaps" control="FLAP0"/>
   <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
@@ -121,7 +121,7 @@ YASim aerodynamic model for a Focke Wulf FW-190 A8
 
 
  <!-- left main -->
-<gear x="-1.474" y="1.783" z="-2.234" compression="0.2" spring="0.5" damp="4.6">
+<gear x="-1.474" y="1.783" z="-2.22" compression="0.2" spring="0.5" damp="4.6">
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -130,7 +130,7 @@ YASim aerodynamic model for a Focke Wulf FW-190 A8
 </gear>
 
  <!-- right main -->
-<gear x="-1.474" y="-1.783" z="-2.234" compression="0.2" spring="0.5" damp="4.6">
+<gear x="-1.474" y="-1.783" z="-2.22" compression="0.2" spring="0.5" damp="4.6">
   <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -139,10 +139,14 @@ YASim aerodynamic model for a Focke Wulf FW-190 A8
 </gear>
 
 <!-- Tail wheel -->
-<gear x="-8.095" y="0" z="-0.609" compression="0.2" sfric="0.5" dfric="0.6" castering="1">
-  <control-input axis="/surface-positions/elevator-pos-norm" control="CASTERING" 
-                 src0="-1" src1="0.3"
-                 dst0="0" dst1="1"/>
+	<!-- tail wheel "steerable" in FW 190 (in stick back locked position it actually should be limited to 6deg +/-) -->
+<gear x="-7.90" y="0" z="-.66" compression="0.2">
+  <control-input axis="/controls/flight/rudder" control="STEER" square="true" 
+                 src0="-1.0" src1="1.0"
+                 dst0="0.5" dst1="-0.5"/>
+  <control-input axis="/controls/gear/tailwheel-lock" control="CASTERING" 
+                 src0="0" src1="1"
+                 dst0="1" dst1="0"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   <control-speed control="EXTEND" transition-time="4"/>
   <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>

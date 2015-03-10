@@ -9,28 +9,49 @@
 	<!-- Rocket Rails -->
 	<model>
 		<name>leftgun</name>
-		<path>Aircraft/bf109/Models/mg151-l.ac</path>
+		<path>Aircraft/fw190/Models/mg151-l.ac</path>
 		<offsets>
-			<x-m>2.8</x-m>
-			<y-m>-1.95</y-m>
-			<z-m>-0.4</z-m>
+			<x-m>2.63</x-m>
+			<y-m>-.9</y-m>
+			<z-m>-0.3</z-m>
 			<pitch-deg>0.0</pitch-deg>
 		</offsets>
 	</model>	
 	<model>
 		<name>rightgun</name>
-		<path>Aircraft/bf109/Models/mg151-r.ac</path>
+		<path>Aircraft/fw190/Models/mg151-r.ac</path>
 		<offsets>
-			<x-m>2.8</x-m>
-			<y-m>1.95</y-m>
-			<z-m>-0.4</z-m>
+			<x-m>2.63</x-m>
+			<y-m>.9</y-m>
+			<z-m>-0.3</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>
+
+<model>
+		<name>outsideleftgun</name>
+		<path>Aircraft/fw190/Models/mg151-l.ac</path>
+		<offsets>
+			<x-m>2.78</x-m>
+			<y-m>-2.41</y-m>
+			<z-m>-0.145</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+	<model>
+		<name>outsiderightgun</name>
+		<path>Aircraft/fw190/Models/mg151-r.ac</path>
+		<offsets>
+			<x-m>2.78</x-m>
+			<y-m>2.41</y-m>
+			<z-m>-0.145</z-m>
 			<pitch-deg>0.0</pitch-deg>
 		</offsets>
 	</model>
 	
 	<model>
 		<name>leftwgr</name>
-		<path>Aircraft/bf109/Models/wgr21-launcher.ac</path>
+		<path>Aircraft/fw190/Models/wgr21-launcher.ac</path>
 		<offsets>
 			<x-m>2.7</x-m>
 			<y-m>-2.2</y-m>
@@ -40,7 +61,7 @@
 	</model>	
 	<model>
 		<name>leftrocket</name>
-		<path>Aircraft/bf109/Models/wgr21.ac</path>
+		<path>Aircraft/fw190/Models/wgr21.ac</path>
 		<offsets>
 			<x-m>2.7</x-m>
 			<y-m>-2.2</y-m>
@@ -51,7 +72,7 @@
 	
 	<model>
 		<name>rightwgr</name>
-		<path>Aircraft/bf109/Models/wgr21-launcher.ac</path>
+		<path>Aircraft/fw190/Models/wgr21-launcher.ac</path>
 		<offsets>
 			<x-m>2.7</x-m>
 			<y-m>2.2</y-m>
@@ -61,7 +82,7 @@
 	</model>	
 	<model>
 		<name>rightrocket</name>
-		<path>Aircraft/bf109/Models/wgr21.ac</path>
+		<path>Aircraft/fw190/Models/wgr21.ac</path>
 		<offsets>
 			<x-m>2.7</x-m>
 			<y-m>2.2</y-m>
@@ -72,7 +93,7 @@
 
      <model>
 		<name>Droptank</name>
-		<path>Aircraft/bf109/Models/droptank.ac</path>
+		<path>Aircraft/fw190/Models/droptank.ac</path>
 		<offsets>
 			<x-m>2.7</x-m>
 			<y-m>0.0</y-m>
@@ -83,7 +104,7 @@
 
      <model>
 		<name>etc</name>
-		<path>Aircraft/bf109/Models/etc.ac</path>
+		<path>Aircraft/fw190/Models/etc.ac</path>
 		<offsets>
 			<x-m>2.7</x-m>
 			<y-m>0.0</y-m>
@@ -94,7 +115,7 @@
 
      <model>
 		<name>sc250</name>
-		<path>Aircraft/bf109/Models/sc250.ac</path>
+		<path>Aircraft/fw190/Models/sc250.ac</path>
 		<offsets>
 			<x-m>2.7</x-m>
 			<y-m>0.0</y-m>

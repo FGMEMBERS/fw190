@@ -42,8 +42,8 @@
 <PropertyList>
 
   <submodel>
-    <name>MG impact smoke</name>
-    <model>Aircraft/fw190/Models/impact.xml</model>
+    <name>Hispano MkV impact smoke</name>
+    <model>Aircraft/fw190/Models/Effects/incendiary.xml</model>
     <!--<trigger>ai/submodels/trigger</trigger>-->
     <speed>0</speed>
     <repeat>true</repeat>

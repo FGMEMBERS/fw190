@@ -1,8 +1,8 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "black.001" rgb 0.430424 0.442768 0.442768 amb 1 1 1 emis 0 0 0 spec 0.407112 0.357737 0.369855 shi 32 trans 0
-MATERIAL "yellow" rgb 0.641204 0.616774 0.201462 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "knob" rgb 0.70228 0.690065 0.68785 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "black.001" rgb 0.430424 0.442768 0.442768 amb 0.430424 0.442768 0.442768 emis 0 0 0 spec 0.407112 0.357737 0.369855 shi 32 trans 0
+MATERIAL "yellow" rgb 0.641204 0.616774 0.201462 amb 0.641204 0.616774 0.201462 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "knob" rgb 0.70228 0.690065 0.68785 amb 0.70228 0.690065 0.68785 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "DefaultWhite.002" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 OBJECT world
 kids 8

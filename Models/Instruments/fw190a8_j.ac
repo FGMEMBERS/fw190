@@ -1,15 +1,15 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "interiour.001" rgb 0.536774 0.535423 0.535423 amb 1 1 1 emis 0 0 0 spec 0.398923 0.361356 0.350628 shi 32 trans 0
+MATERIAL "interiour.001" rgb 0.536774 0.535423 0.535423 amb 0.536774 0.535423 0.535423 emis 0 0 0 spec 0.398923 0.361356 0.350628 shi 32 trans 0
 MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
-MATERIAL "interiour" rgb 0.574596 0.574596 0.74991 amb 1 1 1 emis 0 0 0 spec 1 1 0.629672 shi 12 trans 0
-MATERIAL "black.002" rgb 0.430424 0.442768 0.442768 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.407112 0.357737 0.369855 shi 32 trans 0
-MATERIAL "case.001" rgb 0.15 0.15 0.15 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 78 trans 0
-MATERIAL "red" rgb 0.854582 0 0.121383 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.684928 0.079019 0.103256 shi 32 trans 0
-MATERIAL "black.001" rgb 0.097146 0.097146 0.097146 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.357737 0.357737 0.369855 shi 32 trans 0
-MATERIAL "case" rgb 0.15 0.15 0.15 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 78 trans 0
-MATERIAL "green" rgb 0 1 0.121383 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.103256 1 0.103256 shi 32 trans 0
-MATERIAL "cushion" rgb 0.599641 0.374237 0.123789 amb 1 1 1 emis 0 0 0 spec 0.348834 0.248654 0.12343 shi 32 trans 0
+MATERIAL "interiour" rgb 0.574596 0.574596 0.74991 amb 0.574596 0.574596 0.74991 emis 0 0 0 spec 1 1 0.629672 shi 12 trans 0
+MATERIAL "black.002" rgb 0.430424 0.442768 0.442768 amb 0.430424 0.442768 0.442768 emis 0 0 0 spec 0.407112 0.357737 0.369855 shi 32 trans 0
+MATERIAL "case.001" rgb 0.15 0.15 0.15 amb 0.15 0.15 0.15 emis 0 0 0 spec 1 1 1 shi 78 trans 0
+MATERIAL "red" rgb 0.854582 0 0.121383 amb 0.854582 0 0.121383 emis 0 0 0 spec 0.684928 0.079019 0.103256 shi 32 trans 0
+MATERIAL "black.001" rgb 0.097146 0.097146 0.097146 amb 0.097146 0.097146 0.097146 emis 0 0 0 spec 0.357737 0.357737 0.369855 shi 32 trans 0
+MATERIAL "case" rgb 0.15 0.15 0.15 amb 0.15 0.15 0.15 emis 0 0 0 spec 1 1 1 shi 78 trans 0
+MATERIAL "green" rgb 0 1 0.121383 amb 0 1 0.121383 emis 0 0 0 spec 0.103256 1 0.103256 shi 32 trans 0
+MATERIAL "cushion" rgb 0.599641 0.374237 0.123789 amb 0.599641 0.374237 0.123789 emis 0 0 0 spec 0.348834 0.248654 0.12343 shi 32 trans 0
 OBJECT world
 kids 6
 OBJECT poly
@@ -1310,7 +1310,7 @@ OBJECT poly
 name "knob_1"
 data 8
 Cube.002
-texture "ignswitch.rgb"
+texture "ignswitch.png"
 texrep 1 1
 crease 30
 numvert 44
